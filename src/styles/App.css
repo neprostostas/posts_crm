@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+select {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid rgb(56, 161, 124);
+    box-shadow: 0 0 10px rgb(56, 161, 124);
+}
+
+.App {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__btns {
+    display: flex;
+    gap: 5px;
+}
+
+.post-enter {
+    transform: translateX(-350px);
+}
+
+.post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    padding: 5px 11px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page__current {
+    border-radius: 10px;
+    border: 2px solid rgb(56, 161, 124);
+    font-weight: bold;
+}
+
+.page__wrapper span {
+    margin: 0 2px;
+}
+
+
+.navbar {
+    padding: 0 2rem !important;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background: rgb(56, 161, 124);
+}
+
+.navbar__links {
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.loginPageWrapper {
+    padding-top: 10px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttonLogin {
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(56, 161, 124);
+    -webkit-box-shadow: 5px 6px 12px 3px #81A193;
+    box-shadow: 5px 6px 12px 3px #81A193;
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+.search {
+    width: 200px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(56, 161, 124);
+    border-radius: 10px;
+}
+
+.functionalBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+}

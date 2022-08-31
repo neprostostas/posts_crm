@@ -1,0 +1,12 @@
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.customMain {
+    padding: 1rem;
+    min-height: 100vh;
+    flex: 1 1 auto;
+    margin: 0 auto;
+}
